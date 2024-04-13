@@ -1,0 +1,132 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.leftImg img {
+  position: absolute;
+  left: -1px;
+  top: 9px;
+}
+.rightImg img {
+  position: absolute;
+  right: -1px;
+  transform: scaleX(-1);
+  top: 9px;
+}
+.mainContainer h1 {
+  position: absolute;
+  font-size: 1.4rem;
+  right: 472px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont;
+}
+
+.heading {
+  padding-top: 1.4rem;
+  font-weight: 550;
+}
+.mainContainer h1 {
+  font-size: 1.2rem;
+}
+.logo {
+  position: absolute;
+  left: -2.3rem;
+  top: 1.71rem;
+  width: 40px;
+}
+
+nav {
+  padding-left: 2.9rem;
+  
+ 
+}
+
+.navbar.scrolled {
+  background-color: lightgrey;
+}
+
+
+.trending {
+  color: #d1b000;
+  background-color: #fff387;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-right: 0.7rem;
+}
+
+.auth{
+  font-size: 1.1rem;
+  position: relative;
+  left:20.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #8a9190;
+  font-weight: 400;
+}
+
+.auth {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+.login {
+  height: 2.59rem;
+  color: #325fa6;
+  background-color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+
+.signup {
+  height: 2.59rem;
+  color: white;
+  background-color: #345dd0;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+.flag img {
+  position: relative;
+  left: 18.9rem;
+  top: 0.4rem;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.auth a {
+  margin-left: 10px;
+}
+.mainNav {
+  position: absolute;
+  left: 20rem;
+  top: 4rem;
+}
+
+.logo img {
+  display: flex;
+  position: relative;
+  right: 4rem;
+  width: 70px;
+}
+.scrolled {
+  background-color: lightgray;
+}
