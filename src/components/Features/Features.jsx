@@ -22,6 +22,10 @@ import { GoArrowRight } from "react-icons/go";
 import { AiOutlineDisconnect } from "react-icons/ai";
 import { TbArrowFork } from "react-icons/tb";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { TbPlayerTrackNext } from "react-icons/tb";
+import { MdShoppingCartCheckout } from "react-icons/md";
+import { SlGlobe } from "react-icons/sl";
+import { PiGooglePlayLogoDuotone } from "react-icons/pi";
 
 const Features = () => {
   const [card, setCard] = useState("E-commerce");
@@ -99,24 +103,36 @@ const Features = () => {
       icons:<AiOutlineDisconnect />,
       image: "",
       paragraph:
-        "Utilise 15+ payment gateways for all Aggregators,\nimprove success rates by 10% with zero downtime,\n and cut charges/fees by 15-30%.",
+        "Utilise 15+ payment gateways for all \n Aggregators,improve success rates by \n 10% with zero downtime, and cut charges \n fees by 15-30%.",
       para: "Manage multiple payment gateways with an AI-powered infinity router",
       rightIcon:<TbArrowFork />,
       header:"Payouts Pro",
-      content:"Automate real-time \n routing across \n multiple accounts,\n and achieve 99.\n9% success, \n prevent bank down- \n time disruptions.",
+      content:"Automate real-time \n routing across \n multiple accounts,\n and achieve 99.\n9% success, \n prevent bank \n down- \n time disruptions.",
       footer:"Achieve unbeatable payouts \n success rates with our \n dynamic multi-bank routing",
     },
     {
-      heading: "Card 2",
-      image: "url-to-image-2.jpg",
-      paragraph: "Paragraph for Card 2",
-      buttonLabel: "Button for Card 2",
+      heading: "MoneySaver Export Account",
+      icons:<SlGlobe />,
+      image: "",
+      paragraph:
+        "Utilise 15+ payment gateways for all \n Aggregators,improve success rates by \n 10% with zero downtime, and cut charges \n fees by 15-30%.",
+      para: "Manage multiple payment gateways with an AI-powered infinity router",
+      rightIcon:<PiGooglePlayLogoDuotone />,
+      header:"Turbo UPI",
+      content:"Automate real-time \n routing across \n multiple accounts,\n and achieve 99.\n9% success, \n prevent bank \n down- \n time disruptions.",
+      footer:"Achieve unbeatable payouts \n success rates with our \n dynamic multi-bank routinG",
     },
     {
-      heading: "Card 3",
-      image: "url-to-image-3.jpg",
-      paragraph: "Paragraph for Card 3",
-      buttonLabel: "Button for Card 3",
+      heading: "Line of Credit",
+      icons:<TbPlayerTrackNext />,
+      image: "",
+      paragraph:
+        "Utilise 15+ payment gateways for all \n Aggregators,improve success rates by \n 10% with zero downtime, and cut charges \n fees by 15-30%.",
+      para: "Manage multiple payment gateways with an AI-powered infinity router",
+      rightIcon:<MdOutlineShoppingCart />,
+      header:"Magic Checkout",
+      content:"Automate real-time \n routing across \n multiple accounts,\n and achieve 99.\n9% success, \n prevent bank \n down- \n time disruptions.",
+      footer:"Achieve unbeatable payouts \n success rates with our \n dynamic multi-bank routinG",
     },
   ];
 
@@ -190,14 +206,14 @@ const Features = () => {
                 <footer>{cardsData[activeCard - 1].footer}</footer>
               </div>
             </div>
-            <div className={features.card20}>
-              <button className={features.arrow} onClick={goToPrevCard}>
+            
+              <button className={features.arrow1} onClick={goToPrevCard}>
                 <RiArrowLeftSLine />
               </button>
-              <button className={features.arrow} onClick={goToNextCard}>
+              <button className={features.arrow2} onClick={goToNextCard}>
                 <RiArrowRightSLine />
               </button>
-            </div>
+           
           </div>
         </div>
       </div>
