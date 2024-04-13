@@ -13,7 +13,7 @@ const App = () => {
     <div>
       <Navbar />
       <Main />
-      <Carousel />
+      <Carousel/>
       <Features/>
       <Section />
        <Scroller/>    
