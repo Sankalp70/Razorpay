@@ -193,3 +193,26 @@ button:hover {
   left: 12rem;
   bottom: 1.3rem;
 }
+
+  .leftBtn {
+    position: relative;
+    bottom: 10.2rem;
+    right: 44.4rem;
+    width: 30px;
+    padding-bottom: 16px;
+    height: 30px;
+    border-radius: 50%; 
+    background-color: white;
+  }
+  .rightBtn{
+    position: relative;
+    bottom: 11.8rem;
+    left: 47.4rem;
+    padding-bottom: 14px;
+    padding-left: 9px;
+    width: 30px;
+    height: 30px;
+    border-radius: 60%; 
+    background-color: white;
+  }
+  

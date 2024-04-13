@@ -83,6 +83,8 @@
 
 .cardButtons button.active {
   font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
 }
 
 .cardContent {
@@ -304,12 +306,12 @@
 
 .arrow1 {
   position: relative;
-  bottom: 36.6rem;
+  bottom: 38.8rem;
   background-color: white;
   border-radius: 50%; /* Use 50% for a circle */
   width: 36px; /* Set the width and height to the desired size */
   height: 36px;
-  right: 0.6rem;
+  left: 7.6rem;
 }
 
 .arrow2{
@@ -319,7 +321,7 @@
   border-radius: 50%; /* Use 50% for a circle */
   width: 36px; /* Set the width and height to the desired size */
   height: 36px;
-  left: 86rem;
+  right: 6.8rem;
 }
 /******************************************************************************************************************************/
 

@@ -12,6 +12,8 @@ import { TiMessages } from "react-icons/ti";
 import { LiaFileInvoiceSolid } from "react-icons/lia";
 import { BsQrCode } from "react-icons/bs";
 import { FaArrowsRotate } from "react-icons/fa6";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { MdOutlineArrowBackIos } from "react-icons/md";
 
 const Section = () => {
   const [currentCard, setCurrentCard] = useState(0);
@@ -209,10 +211,14 @@ const Section = () => {
               <CardComponent key={card.id} card={card} />
             ))}
           </div>
-          <div className={sectionStyles.toggleButtons}>
-            <button onClick={handlePrev}>&lt;</button>
-            <button onClick={handleNext}>&gt;</button>
-          </div>
+
+            <div className={sectionStyles.leftBtn}>
+            <button onClick={handlePrev}><MdOutlineArrowBackIos /></button>
+            </div>
+            <div className={sectionStyles.rightBtn}>
+            <button onClick={handleNext}><MdOutlineArrowForwardIos/></button>
+            </div>
+
         </div>
       </div>
     </div>
