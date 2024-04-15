@@ -1,85 +1,122 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.mainContainer{
-    width: 100%;
-    height: 200vh;
-    background-color: #f5f5f5;
-    padding-left: 13.32rem;
-   
+.mainContainer {
+  width: 100%;
+  height: 200vh;
+  background-color: #f5f5f5;
+  padding-left: 13.32rem;
 }
 
-.paragraph{
-    width: 22rem;
-    font-family: sans-serif;
-    color: #A7B2B8;
-    display: flex;
-    flex-direction: column;
+.paragraph {
+  width: 22rem;
+  font-family: sans-serif;
+  color: #a7b2b8;
+  display: flex;
+  flex-direction: column;
 }
-.signupBtn button{
-    position: relative;
-    bottom: 96px;
-    background-color: #0979ED;
-    border: none;
-    height: 39.45px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    width: 140px;
+.signupBtn button {
+  position: relative;
+  bottom: 96px;
+  background-color: #0979ed;
+  border: none;
+  height: 39.45px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  width: 140px;
 }
-.footerElements footer{
-    display: flex;
+.footerElements footer {
+  display: flex;
 }
-.footerElements{
-    display: flex;
-    position: relative;
-    bottom: 52.61rem;
-    left: 26.12rem;
+.footerElements {
+  display: flex;
+  position: relative;
+  bottom: 52.61rem;
+  left: 26.12rem;
 }
 .heading {
-    padding-top: 5.21rem;
-    font-size: 1.44rem;
-    padding-bottom: 8.67rem;
+  padding-top: 5.21rem;
+  font-size: 1.44rem;
+  padding-bottom: 8.67rem;
 }
-.heading h1{
-    font-size: 3.2rem;
-    font-weight: 600;
+.heading h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
 }
-.section ul{
+.section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #0979ed;
+}
+.section h2 {
+  font-size: 17px;
+}
+ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+li {
+  font-weight: 550;
+}
+address {
+  color: #a7b2b8;
+}
+.logo {
+  padding-bottom: 16px;
+}
+.container p {
+  color: #a7b2b8;
+}
+.container h4 {
+  padding-bottom: 0.8rem;
+}
+.socials ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+}
+
+@media (max-width: 768px) {
+  * {
+    background-color: #f5f5f5;
+  }
+
+  .footer {
+    overflow: hidden;
+    position: absolute;
+    top: 62.6rem;
+    right: 40rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: #0979ED;
-}
-.section h2{
-    font-size: 17px;
-    
-}
-ul{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
-}
-li{
-    font-weight: 550;
-}
-address{
-    color: #A7B2B8;
-}
-.logo{
-    padding-bottom: 16px;
-}
-.container p{
-    color: #A7B2B8;
-}
-.container h4{
-    padding-bottom: 0.8rem;
-}
-.socials ul{
-    display: flex;
-    flex-direction: row;
-    padding-top: 12px;
+  }
+  /* Responsive styles for heading */
+  .heading {
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Responsive styles for heading h1 */
+  .heading h1 {
+    position: relative;
+    padding-top: 14rem;
+    right: 4.24rem;
+    font-size: 2.24rem;
+    font-weight: 600;
+  }
+  .signupBtn {
+    display: none;
+  }
+  .paragraph p {
+    position: relative;
+    right: 2rem;
+    padding-right: 2rem;
+    font-size: 12px; /* Adjust the font size for smaller screens */
+    line-height: 1; /* Adjust the line height for better readability */
+  }
 }
