@@ -7,17 +7,18 @@ import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
 import { ReactComponent as Facebook } from "../../assets/facebook.svg";
 import { ReactComponent as GithubIcon } from "../../assets/github.svg";
-import Iso from '../../assets/iso.png';
-import Pci from '../../assets/pci.png';
-import  Soc from '../../assets/soc.png';
-
+import Iso from "../../assets/iso.png";
+import Pci from "../../assets/pci.png";
+import Soc from "../../assets/soc.png";
 
 const Footer = () => {
   return (
     <div>
       <div className={footerstyles.mainContainer}>
         <div className={footerstyles.heading}>
-          <h1>Supercharge your business <br/> with Razorpay</h1>
+          <h1>
+            Supercharge your business <br /> with Razorpay
+          </h1>
         </div>
         <div className={footerstyles.signupBtn}>
           <button>
@@ -55,7 +56,7 @@ const Footer = () => {
           <div className={footerstyles.image}>
             <img src={Pci} width="93px" alt="pci" />
             <img src={Iso} width="86px" alt="iso" />
-            <br/>
+            <br />
             <img src={Soc} width="90px" alt="pci" />
           </div>
         </div>
@@ -209,24 +210,22 @@ const Footer = () => {
                 </div>
               </div>
               <div className={footerstyles.container}>
-              <h4>REGD. OFFICE ADDRESS</h4>
-              <address>
-                Razorpay Software Private Limited,
-                <br />
-                1st Floor, SJR Cyber,
-                <br />
-                22 Laskar Hosur Road, Adugodi,
-                <br />
-                Bengaluru, 560030,
-                <br />
-                Karnataka, India
-              </address>
-              <p>CIN: U72200KA2013PTC097389</p>
-              <p>© Razorpay 2024. All Rights Reserved</p>
+                <h4>REGD. OFFICE ADDRESS</h4>
+                <address>
+                  Razorpay Software Private Limited,
+                  <br />
+                  1st Floor, SJR Cyber,
+                  <br />
+                  22 Laskar Hosur Road, Adugodi,
+                  <br />
+                  Bengaluru, 560030,
+                  <br />
+                  Karnataka, India
+                </address>
+                <p>CIN: U72200KA2013PTC097389</p>
+                <p>© Razorpay 2024. All Rights Reserved</p>
+              </div>
             </div>
-            </div>
-
-        
           </footer>
         </div>
       </div>
