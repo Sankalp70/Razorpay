@@ -1,0 +1,133 @@
+/* Card.module.css */
+
+.card {
+    width: 100%;
+    height: 70vh;
+    max-width: 1300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .cardOption {
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cardOption:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .active {
+    background-color: #c0c0c0;
+  }
+  
+  .cardBody {
+    padding: 20px;
+  }
+  
+  .cardContent {
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .cardImages img {
+    height: calc(150%-10px);
+    width: calc(150% - 5px); /* Four images per row with a little space between */
+   
+  }
+  
+  
+  .cardArrows {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cardArrows button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .cardArrows button:hover {
+    color: #333;
+  }
+  
+  
+  .cardImages {
+    display: flex; /* Use flexbox for row layout */
+    flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+    margin: 0 -10px; /* Add negative margin to compensate for image margins */
+  }
+  
+  .imageContainer {
+    flex: 0 0 calc(25% - 20px); /* Set width for each image container (25% of the container width with margin) */
+    margin: 10px; /* Add margin between images */
+    text-align: center; /* Center the image and text */
+  }
+  
+  .cardImages img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    border-radius: 5px; /* Add border-radius to images */
+  }
+  
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 768px) {
+    .cardImages img {
+      width: calc(
+        33.33% - 5px
+      ); /* Three images per row with a little space between */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cardImages img {
+      width: calc(50% - 5px); /* Two images per row with a little space between */
+    }
+  }
+     /**********************************************/
+  
+     .insideCard {
+    
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgray;
+  }
+  
+  .insidecardContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image {
+    flex: 0 0 23%;
+    margin-bottom: 20px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      flex: 0 0 48%;
+    }
+  }
+  

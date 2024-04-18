@@ -3,13 +3,13 @@
   margin-top: 100px;
   padding-bottom: 1300px;
   width: 70%;
-  background-color: #f4f4f4;;
+
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.card {
+.cards {
   top: 30px;
   height: 72vh;
   position: sticky;
@@ -22,45 +22,45 @@
   margin-bottom: 20px;
 }
 
-.card h2 {
+.cards h2 {
   padding: 0;
 }
 
-.card span {
+.cards span {
   display: block;
   font-size: 14px;
   color: #0c4eb9;
 }
 
-.card:nth-child(1n) {
+.cards:nth-child(1n) {
   top: 1 * 20px;
 }
 
-.card:nth-child(2n) {
+.cards:nth-child(2n) {
   top: 2 * 20px;
 }
 
-.card:nth-child(3n) {
+.cards:nth-child(3n) {
   top: 3 * 20px;
 }
 
-.card:nth-child(4n) {
+.cards:nth-child(4n) {
   top: 4 * 20px;
 }
 
-.card:nth-child(5n) {
+.cards:nth-child(5n) {
   top: 5 * 20px;
 }
 
-.card:nth-child(6n) {
+.cards:nth-child(6n) {
   top: 6 * 20px;
 }
 
-.card:nth-child(7n) {
+.cards:nth-child(7n) {
   top: 7 * 20px;
 }
 
-.card:nth-child(8n) {
+.cards:nth-child(8n) {
   top: 8 * 20px;
 }
 /***************************************************************Card Component*************************************************************/
