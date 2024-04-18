@@ -1,0 +1,49 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  padding-top: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightside {
+  display: flex;
+  align-items: center;
+}
+
+.rightside button {
+  margin-right: 10px;
+  padding: 5px 5px;
+  color: blue;
+  font-size: 1rem;
+  border: 1px solid blue;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+
+  padding-bottom: 1.5rem;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+/**********************************************************************************************************************************/
+
+/* styles.module.css */

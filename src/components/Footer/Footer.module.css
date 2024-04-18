@@ -1,24 +1,31 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
-}
-
-.mainContainer {
+  }
+  .logo {
+    width: 100%; /* Use a percentage width to make it scale with the container */
+    max-width: 110px; /* Maximum width to maintain the design aesthetics */
+    height: auto; /* Auto height to maintain aspect ratio */
+    padding-bottom: 16px; /* Maintain padding */
+  }
+  
+  .mainContainer {
   width: 100%;
   height: 200vh;
   background-color: #f5f5f5;
   padding-left: 13.32rem;
-}
-
-.paragraph {
+  }
+  
+  .paragraph {
   width: 22rem;
   font-family: sans-serif;
   color: #a7b2b8;
   display: flex;
   flex-direction: column;
-}
-.signupBtn button {
+  }
+  .signupBtn button {
   position: relative;
   bottom: 96px;
   background-color: #0979ed;
@@ -28,97 +35,147 @@
   font-weight: bold;
   color: white;
   width: 140px;
-}
-.footerElements footer {
+  }
+  .footerElements footer {
   display: flex;
-}
-.footerElements {
+  }
+  .footerElements {
   display: flex;
   position: relative;
   bottom: 52.61rem;
   left: 26.12rem;
-}
-.heading {
+  }
+  .heading {
   padding-top: 5.21rem;
   font-size: 1.44rem;
   padding-bottom: 8.67rem;
-}
-.heading h1 {
+  }
+  .heading h1 {
   font-size: 3.2rem;
   font-weight: 600;
-}
-.section ul {
+  }
+  .section ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: #0979ed;
-}
-.section h2 {
+  }
+  .section h2 {
   font-size: 17px;
-}
-ul {
+  }
+  ul {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  list-style-type: none;
-}
-li {
+  }
+  li {
   font-weight: 550;
-}
-address {
+  }
+  address {
   color: #a7b2b8;
-}
-.logo {
+  }
+  .logo {
   padding-bottom: 16px;
-}
-.container p {
+  }
+  .container p {
   color: #a7b2b8;
-}
-.container h4 {
+  }
+  .container h4 {
   padding-bottom: 0.8rem;
-}
-.socials ul {
+  }
+  .socials ul {
   display: flex;
   flex-direction: row;
   padding-top: 12px;
-}
-
-/* Media query for mobile view */
-@media (max-width: 768px) {
-  * {
-    background-color: #f5f5f5;
   }
-
-  .footer {
-    overflow: hidden;
-    position: absolute;
-    top: 62.6rem;
-    right: 19.21rem;
-    display: flex;
-    flex-direction: column;
+  /* Mobile Responsive */
+  
+  @media only screen and (max-width: 767px) {
+    .mainContainer {
+      padding-left: 1rem; /* Reduced padding for mobile screens */
+      padding-right: 1rem; /* Added padding to ensure content doesn't touch the edges */
+    }
+  
+    .footer {
+      position: relative; /* Changed from absolute to relative for better flow */
+      width: 100%; /* Ensure it spans the full width */
+      display: block; /* Change display to block for stacking */
+      padding-top: 1rem; /* Added padding for spacing */
+    }
+    .signupBtn {
+      display: none;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    .heading {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.2rem; /* Slightly larger for readability */
+      text-align: center; /* Center-align headings */
+    }
+  
+    .heading h1 {
+      font-size: 1.6rem; /* Reduced size for mobile */
+      margin-right: auto; /* Align properly */
+      margin-left: auto; /* Align properly */
+    }
+  
+    .signupBtn {
+      display: none; /* Ensure button is visible if needed */
+      width: 100%; /* Full width for easier touch */
+      margin-top: 0.5rem; /* Add some margin on top */
+    }
+  
+    .signupBtn button {
+      width: auto; /* Adapt width to content */
+      padding: 0.5rem 1rem; /* Larger touch area */
+    }
+  
+    .paragraph {
+      font-size: 1rem; /* Slightly larger for better readability */
+      padding: 0.5rem; /* Add padding to prevent text from touching the sides */
+      margin: 0 auto; /* Center the paragraph in the container */
+      max-width: 90%; /* Limit max width to improve readability */
+      line-height: 1.5; /* Improve line spacing for better readability */
+    }
+    .section ul {
+      display: block; /* Ensure the list is displayed */
+      padding: 0.5rem;
+    }
+  
+    .section li {
+      display: list-item; /* Ensure list items are displayed */
+      list-style-type: none; /* Add a bullet point style */
+      list-style-position: inside; /* Position bullet points inside the content area */
+      color: #0979ed; /* Adjust color if needed */
+    }
+  
+    .socials ul {
+      justify-content: center;
+      padding-bottom: 1rem;
+    
+    }
+    .footer {
+      overflow: hidden;
+      position: absolute;
+      top: 57.6rem;
+      right: 24rem;
+      display: flex;
+      flex-direction: column;
+      }
+  
+    .image {
+      display: flex;
+      gap: 1rem;
+      width: 20%; /* Reduce image size to fit mobile screens */
+      margin-left: auto; /* Center images */
+      margin-right: auto; /* Center images */
+      display: block; /* Ensure images are block level to handle margin */
+    }
   }
-  /* Responsive styles for heading */
-  .heading {
-    padding-top: 2rem;
-    font-size: 1rem;
-    text-align: center;
+  @media only screen and (max-width: 767px) {
+    .logo {
+      max-width: 80px; /* Smaller max-width for smaller screens */
+      padding-bottom: 8px; /* Reduce padding-bottom on smaller screens */
+    }
   }
-
-  /* Responsive styles for heading h1 */
-  .heading h1 {
-    position: relative;
-    padding-top: 14rem;
-    right: 1.5rem;
-    font-size: 2.24rem;
-    font-weight: 600;
-  }
-  .signupBtn {
-    display: none;
-  }
-  .paragraph p {
-    position: relative;
-    right: 0.8rem;
-    padding-right: 2rem;
-    font-size: 12px; /* Adjust the font size for smaller screens */
-    line-height: 1; /* Adjust the line height for better readability */
-  }
-}
+  

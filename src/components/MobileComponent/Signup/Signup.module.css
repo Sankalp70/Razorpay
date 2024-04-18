@@ -1,0 +1,78 @@
+.mainContainer {
+  margin-top: 1.3rem;
+  margin: 1.3rem;
+  background-color: #ffffff !important;
+}
+.mainContainer h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.mainContainer p {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.label span {
+  display: inline;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+.features span {
+  display: inline-block; /* This will keep them inline but allow padding */
+  padding: 0rem 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: #427d42;
+  background-color: #d3ecc4;
+  margin-right: 10px; /* Adds spacing between each feature item */
+}
+
+.mainContainer h5 {
+  margin-top: 1.4rem;
+  font-size: 0.9rem;
+  color: grey;
+}
+.formContainer label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+.formContainer button {
+  color: grey;
+  background-color: lightgray;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+}
+.requiredText::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+.formContainer input {
+  border: none;
+  height: 1.7rem;
+  background-color: rgb(228, 227, 227);
+  border-bottom: 1.2px solid rgb(170, 168, 168);
+}
+
+.formContainer input::placeholder {
+  padding-left: 1.2rem;
+  color: grey;
+}
+.formContainer img {
+  max-width: 100%; /* Maximum width of the image is 100% of its container */
+  height: auto; /* Height is set to auto to maintain aspect ratio */
+  margin: 2rem 0 0 2rem;
+  filter: saturate(2);
+}
+@media (max-width: 768px) {
+  /* Adjusts styles for screens smaller than 768px */
+  .formContainer img {
+    margin: 2rem 0; /* Reduces margin for smaller devices */
+  }
+}

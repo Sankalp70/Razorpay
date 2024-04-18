@@ -1,0 +1,271 @@
+/* Grid.module.css 
+.pageHeading {
+  padding-bottom: 1.8rem;
+  padding-top: 1.5rem;
+  background-color: #203b59;
+  color: white;
+}
+.pageHeading h5 {
+  position: relative;
+  font-size: 0.7rem;
+  padding-left: 1.58rem;
+  padding-top: 1rem;
+  bottom: 0.6rem;
+  color: #8aa3c1;
+  background-color: #203b59;
+}
+.pageHeading h1 {
+  position: relative;
+  font-size: 1.37rem;
+  top: 0.4rem;
+  padding-left: 1.3rem;
+  font-weight: bold;
+  background-color: #203b59;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card b {
+  font-weight: 400;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: rgb(43, 43, 43);
+  background-color: #e1e1e1;
+  margin-left: 0.8rem;
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+  
+  border-radius: 5px;
+  border-bottom: none;
+  border-left: 1.2px solid rgb(234, 232, 232);
+}
+.signupBtn{
+  position: relative;
+  top: 0.86rem;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card:first-child {
+  border-left: none; 
+}
+
+.card:nth-child(2n) {
+  border-right: none; 
+}
+
+.card h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+}
+
+.card p {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 10px;
+  margin-left: 0.8rem;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  color: #007bff;
+  border: none;
+  margin-left: -2.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}*/
+
+/* Updated Css */
+.pageHeading {
+  padding-bottom: 1.8rem;
+  padding-top: 1.5rem;
+  background-color: #203b59;
+  color: white;
+}
+
+.pageHeading h5 {
+  position: relative;
+  font-size: 0.7rem;
+  padding-left: 1.58rem;
+  padding-top: 1rem;
+  bottom: 0.6rem;
+  color: #8aa3c1;
+  background-color: #203b59;
+}
+
+.pageHeading h1 {
+  position: relative;
+  font-size: 1rem; /* Adjusted for better visibility */
+  top: 0.4rem;
+  padding-left: 1.3rem;
+  font-weight: bold;
+  background-color: #203b59;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card b {
+  margin-top: 1rem;
+  margin-right: 4.2rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: rgb(43, 43, 43);
+  background-color: #e1e1e1;
+  margin-left: 0.8rem;
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  border-bottom: none;
+  border-left: 1.2px solid rgb(234, 232, 232);
+  /* * * * * * * * * * * * * * * * * * * */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:first-child img {
+  object-fit: cover; /* This can be adjusted to 'cover' if necessary */
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Maintain two columns on small screens */
+  }
+
+  .pageHeading h5 {
+    font-size: 1rem; /* Increased font size for better readability */
+  }
+
+  .pageHeading h1 {
+    font-size: 1.5rem; /* Increased font size for better visibility */
+  }
+
+  .card {
+    border-left: none; /* Remove borders to utilize screen space */
+    margin-bottom: 1rem; /* Add some space between cards */
+  }
+
+  .card button {
+    margin-left: 0; /* Align button properly within the card */
+    background-color: white;
+  }
+}
+
+.card:first-child {
+  border-left: none; /* Remove left border for the first card in each row */
+}
+
+.card:nth-child(2n) {
+  border-right: none; /* Remove right border for every second card in each row */
+}
+
+.card h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+}
+
+.card p {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 10px;
+  margin-left: 0.8rem;
+}
+
+.card button {
+  margin-top: auto; /* Push the button to the bottom of the card */
+  width: 100%;
+  padding: 12px 0; /* Uniform padding */
+  color: #007bff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+/* Responsive Button */
+
+@media (max-width: 768px) {
+  .card {
+    border-left: none; /* Remove left border for better appearance */
+    margin-bottom: 1rem; /* Add some space below each card */
+  }
+  .card:first-child {
+    border-left: none; /* Specific adjustment if needed */
+  }
+  .card button {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card button {
+    font-size: 0.8rem; /* Further reduce font size for very small screens */
+    padding: 8px 0; /* Further reduce padding for very small screens */
+  }
+}
+/* Responsive Image */
+
+.card img {
+  width: 100%; /* Ensures the image takes the full width of the card */
+  height: auto; /* Maintains the aspect ratio of the image */
+  object-fit: cover; /* Ensures the image covers the area without distorting */
+  border-radius: 5px 5px 0 0; /* Rounded corners at the top */
+}
+
+@media (max-width: 768px) {
+  .card img {
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    object-fit: contain; /* Changes fit type to prevent cutting off on small screens */
+  }
+}
