@@ -26,6 +26,7 @@ const App = () => {
             {isDesktop ? <Carousel /> : <Grid />}
             {isDesktop ? <Features /> : <Component />}
             {isDesktop ? <Section /> : null } 
+            {isDesktop ? <Scroller /> : null } 
             <Footer/> 
              
     </div>
