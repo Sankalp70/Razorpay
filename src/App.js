@@ -4,7 +4,6 @@ import Main from "./components/Main/Main";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import Section from "./components/Section/Section";
-
 import Features from "./components/Features/Features";
 import Nav from "./components/MobileComponent/MobileNavbar/Nav";
 import Signup from "./components/MobileComponent/Signup/Signup";
