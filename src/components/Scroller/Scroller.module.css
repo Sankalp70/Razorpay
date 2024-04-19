@@ -8,7 +8,6 @@
   display: flex;
   animation: scrollCards 38s linear infinite;
   animation-play-state: running;
- 
 }
 
 .cardsContainer:hover {
@@ -73,9 +72,7 @@
   font-size: 20px;
   color: #333;
   transition: transform 0.5s;
-  
 }
-
 
 .cardFront {
   background-color: #f0f0f0;
@@ -97,4 +94,61 @@
 
 .hovered .cardBack {
   transform: rotateY(0);
+}
+
+
+/* Base CSS stays the same, add media queries below */
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .mainContainer h1 {
+    font-size: 1rem;
+    position: static;
+    margin: 10px 0;
+  }
+  .logo img {
+    width: 50px;
+    position: static;
+    margin-bottom: 10px;
+  }
+  .mainNav {
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  .mainNav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainNav ul li {
+    margin-bottom: 5px;
+  }
+  .auth {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .auth a {
+    margin: 5px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .mainContainer h1 {
+    font-size: 0.8rem;
+  }
+  .trending {
+    font-size: 0.7rem;
+  }
+  .logo img {
+    width: 40px;
+  }
 }

@@ -84,3 +84,56 @@ bottom: 12.34rem;
   font-weight: 700;
 }
 
+/*The following media queries for tablet responsiveness */
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    top: 5rem; /* Adjust the top spacing */
+    left: 2rem; /* Reduce left margin */
+    width: auto; /* Allow container to fill available width */
+    height: auto; /* Adjust height based on content */
+    max-width: 96%; /* Leave some margin */
+  }
+
+  .inputBox input {
+    width: 90%; /* Increase width for better usability */
+    left: 5%; /* Center the input */
+    bottom: 0; /* Reset bottom alignment */
+    font-size: 1.2rem; /* Increase font size for readability */
+  }
+
+  .navSlider {
+    bottom: 0; /* Reset the bottom to zero */
+    padding: 1rem 0; /* Standardize padding */
+  }
+
+  .heading h1 {
+    padding-left: 2rem; /* Adjust padding for better alignment */
+    font-size: 2rem; /* Reduce font size to fit smaller screens */
+  }
+
+  .heading {
+    bottom: 0; /* Reset bottom */
+    padding-top: 2rem; /* Add padding on top for spacing */
+  }
+
+  .searchIcon {
+    bottom: 0.5rem; /* Adjust the position of the search icon */
+    left: 1rem; /* Move the icon closer to the input text */
+  }
+
+  .paragraph {
+    padding-top: 1rem; /* Reduce the top padding */
+    padding-left: 2rem; /* Align text better on the left */
+    flex-direction: column; /* Stack the items vertically */
+  }
+
+  .paragraph span {
+    margin-right: 0; /* Remove margin on the right */
+    margin-bottom: 0.5rem; /* Add a bottom margin for separation */
+  }
+
+  .container {
+    padding-right: 1rem; /* Adjust padding between logos */
+  }
+}

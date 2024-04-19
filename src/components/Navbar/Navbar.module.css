@@ -39,8 +39,7 @@
   width: 40px;
 }
 
-
-.mainNav{
+.mainNav {
   position: fixed;
   z-index: 999;
 }
@@ -53,7 +52,6 @@ nav {
   background-color: lightgrey;
 }
 
-
 .trending {
   color: #d1b000;
   background-color: #fff387;
@@ -62,10 +60,10 @@ nav {
   margin-right: 0.7rem;
 }
 
-.auth{
+.auth {
   font-size: 1.1rem;
   position: relative;
-  left:20.2rem;
+  left: 20.2rem;
 }
 
 a {
@@ -77,7 +75,8 @@ a {
 .auth {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .login {
   height: 2.59rem;
@@ -87,7 +86,6 @@ a {
   text-decoration: none;
 }
 
-
 .signup {
   height: 2.59rem;
   color: white;
@@ -95,7 +93,6 @@ a {
   padding: 8px 8px;
   text-decoration: none;
 }
-
 
 ul {
   list-style-type: none;
@@ -133,4 +130,61 @@ ul li {
 }
 .scrolled {
   background-color: lightgray;
+}
+
+/* Media query for tablet devices */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* More padding for better touch accessibility */
+  }
+
+  .mainContainer h1 {
+    position: relative; /* Make position relative for better control */
+    right: 0; /* Reset the positioning */
+    text-align: center; /* Center align the heading */
+    font-size: 1.2rem; /* Adjust font size for readability on tablets */
+  }
+
+  .logo {
+    position: relative;
+    left: 0; /* Reset the left positioning */
+    width: 60px; /* Adjust logo size for tablets */
+    margin-bottom: 10px; /* Add some space below the logo */
+  }
+
+  .mainNav {
+    position: static; /* Make navigation static */
+    width: 100%; /* Full width for easier navigation on tablets */
+    display: flex;
+    flex-direction: column; /* Stack the navigation items vertically */
+    align-items: center;
+    padding-top: 10px; /* Add padding to the top */
+  }
+
+  .mainNav ul {
+    flex-direction: column;
+    align-items: center; /* Center align the list items */
+  }
+
+  .auth {
+    flex-direction: column; /* Stack login and signup vertically */
+    left: 0; /* Reset left positioning */
+  }
+
+  .auth a {
+    margin-bottom: 5px; /* Add margin for better separation */
+  }
+
+  .flag img {
+    left: 0; /* Center the flag image */
+    margin-left: 0;
+    margin-bottom: 5px; /* Add margin below the flag */
+  }
+
+  .rightImg img,
+  .leftImg img {
+    display: none; /* Hide these images on tablets if they clutter the layout */
+  }
 }

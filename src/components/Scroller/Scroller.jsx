@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import scrollstyles from "./Scroller.module.css"; 
+import scrollstyles from "./Scroller.module.css";
 import frontImage1 from "../../assets/founder1.webp";
 import frontImage2 from "../../assets/founder5.jpeg";
 import frontImage3 from "../../assets/founder3.jpeg";
 import frontImage4 from "../../assets/founder4.jpeg";
 import frontImage5 from "../../assets/founder2.jpeg";
 import frontImage6 from "../../assets/founder6.jpg";
-
 
 const Scroller = () => {
   const [isHovered, setIsHovered] = useState(null);
@@ -19,7 +18,7 @@ const Scroller = () => {
     frontImage5,
     frontImage6,
   ];
-  
+
   const frontParagraphs = [
     `Aditya Shankar\nCo-founder-DoubtNut`,
     "Nikita Gujral\nFounder-AN Fashions",
@@ -61,19 +60,32 @@ const Scroller = () => {
               <img
                 src={frontImages[index]}
                 alt={`frontsideimage`}
-                style={{ width: "300px", height: "370px", gap:"40px" }}
+                style={{ width: "300px", height: "370px", gap: "40px" }}
               />
-              <p style={{ position: "absolute", bottom: 0, left: 0, color:"white", fontSize:"1rem", fontWeight:"bold" }} className={scrollstyles.cardText}>
-    {frontParagraphs[index].split('\n').map((line, i) => (
-      <React.Fragment key={i}>
-        {line}
-        <br />
-      </React.Fragment>
-    ))}
-  </p>
+              <p
+                style={{
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  color: "white",
+                  fontSize: "1rem",
+                  fontWeight: "bold",
+                }}
+                className={scrollstyles.cardText}
+              >
+                {frontParagraphs[index].split("\n").map((line, i) => (
+                  <React.Fragment key={i}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
             </div>
-            <div style={{backgroundColor:"white", fontWeight:"bold"}} className={scrollstyles.cardBack}>
-              <p  className={scrollstyles.cardText}>{backParagraphs[index]}</p>
+            <div
+              style={{ backgroundColor: "white", fontWeight: "bold" }}
+              className={scrollstyles.cardBack}
+            >
+              <p className={scrollstyles.cardText}>{backParagraphs[index]}</p>
             </div>
           </div>
         ))}

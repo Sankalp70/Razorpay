@@ -11,6 +11,7 @@ import Signup from "./components/MobileComponent/Signup/Signup";
 import Grid from "./components/MobileComponent/Grid/Grid";
 import Component from './components/MobileComponent/Component/Component'
 import useWindowSize from "./components/Hooks/useWindowSize";
+import Scroller from "./components/Scroller/Scroller";
 
 
 const App = () => {
@@ -20,14 +21,13 @@ const App = () => {
 
   return (
     <div>      
-            {isDesktop ? <Navbar /> : <Nav />}
+            {isDesktop ? <Navbar /> : <Nav />} 
             {isDesktop ? <Main /> : <Signup />}
             {isDesktop ? <Carousel /> : <Grid />}
             {isDesktop ? <Features /> : <Component />}
-            {isDesktop ? <Section /> : null }
-            <Footer/>
-
-
+            {isDesktop ? <Section /> : null } 
+            <Footer/> 
+             
     </div>
   );
 };

@@ -60,7 +60,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .cardButtons {
@@ -157,14 +156,13 @@
 .cardContent:hover .overlay {
   opacity: 1;
 }
-/*****************************Card Container*****************************************/
+
 .featureCard {
   position: relative;
   bottom: 21rem;
   width: 100%;
   height: 125vh;
   background-color: #f5f5f5;
-  
 }
 .header {
   padding-left: 12.21rem;
@@ -174,8 +172,6 @@
   font-weight: 600;
 }
 
-/******************************************************Card Container**********************************************************/
-
 .cardContainers {
   position: relative;
   top: 53rem;
@@ -184,9 +180,6 @@
   border-radius: 5px;
   height: 200px; /* Set a fixed height for the card */
 }
-
-
-
 
 /* Features.module.css */
 
@@ -254,13 +247,13 @@
   color: gray;
   font-size: 1.2rem;
 }
-.cardContents h3{
+.cardContents h3 {
   position: relative;
   left: 77rem;
   font-size: 1.5rem;
   bottom: 15.3rem;
 }
-.cardContents h1{
+.cardContents h1 {
   position: relative;
   left: 63rem;
   bottom: 17.5rem;
@@ -268,20 +261,20 @@
   font-weight: 600;
   color: gray;
 }
-.cardContents h5{
+.cardContents h5 {
   position: relative;
   left: 62.8rem;
   bottom: 13.7rem;
   font-size: 1.9rem;
   white-space: pre-line;
 }
-.cardContents footer{
+.cardContents footer {
   position: relative;
   left: 63.1rem;
   bottom: 10.6rem;
   color: grey;
   font-weight: 500;
-  white-space:pre-line;
+  white-space: pre-line;
 }
 .SignupBtn {
   position: relative;
@@ -294,14 +287,13 @@
   border-radius: 3px;
 }
 
-.knowMore{
+.knowMore {
   position: relative;
   font-size: 1rem;
   top: 16.64rem;
   color: #007bff;
   font-weight: 600;
   left: 9.7rem;
-
 }
 
 .arrow1 {
@@ -314,7 +306,7 @@
   left: 7.6rem;
 }
 
-.arrow2{
+.arrow2 {
   position: relative;
   bottom: 38rem;
   background-color: white;
@@ -323,7 +315,6 @@
   height: 36px;
   right: 6.8rem;
 }
-/******************************************************************************************************************************/
 
 .wrapper {
   position: relative;
@@ -331,7 +322,7 @@
   padding-top: 150px;
   padding-bottom: 1300px;
   max-width: 700px;
-  background-color: #f4f4f4;;
+  background-color: #f4f4f4;
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -390,4 +381,5 @@
 .card:nth-child(8n) {
   top: 8 * 20px;
 }
-/***************************************************************Card Component*************************************************************/
+
+/****************************************************************************************************************/
