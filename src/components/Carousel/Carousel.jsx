@@ -11,7 +11,7 @@ import plugin1 from "../../assets/plugin1.webp";
 import pos from "../../assets/pos.webp";
 import qrcode from "../../assets/qrcode.jpeg";
 import styles from "./Feat.module.css";
-
+/************************************************************Default Carousel*****************************************************************/ 
 const Carousel = () => {
   const [activeCard, setActiveCard] = useState(0);
   const cards = [
