@@ -72,7 +72,7 @@ const Navbar = () => {
       </div>
 
       <nav className={NavbarStyles.mainNav}>
-        <div className={NavbarStyles.logo}>
+        <div className={NavbarStyles.logo} >
           <img src={Razorpayicon} style={{width:"117px"}} alt="Razorpay Logo" />
         </div>
         <ul>

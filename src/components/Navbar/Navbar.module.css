@@ -37,6 +37,7 @@
   left: -2.3rem;
   top: 1.71rem;
   width: 40px;
+  cursor: pointer;
 }
 
 .mainNav {
@@ -70,6 +71,7 @@ a {
   text-decoration: none;
   color: #8a9190;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .auth {
@@ -121,7 +123,9 @@ ul li {
   left: 20rem;
   top: 4rem;
 }
-
+.mainContainer{
+  cursor: pointer;
+}
 .logo img {
   display: flex;
   position: relative;
