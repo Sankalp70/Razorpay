@@ -1,0 +1,187 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.navbarLogo {
+  display: flex;
+}
+
+.navbarLogo h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.navbarNav {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  font-weight: 600;
+  gap: 1.2rem;
+}
+
+.navItem {
+  position: relative; /* Allows absolute positioning for dropdown */
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(6, 3, 3);
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown starts off hidden and transitions to visible on hover */
+.dropdownMenu {
+  opacity: 0; /* Initially invisible */
+  cursor: pointer;
+  position: absolute;
+  top: 100%; /* Positioned below the nav item */
+  left: 0;
+  min-height: 15rem;
+  min-width: 15rem;
+  background: white;
+  padding: 10px;
+  z-index: 10;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  transform: translateY(-10px); /* Start slightly above */
+  transition: opacity 0.5s ease, transform 0.5s ease !important; /* Transition animation */
+}
+
+.navItem:hover .dropdownMenu {
+
+  opacity: 1; 
+  transform: translateY(0); 
+  display: block; 
+}
+
+.dropdownMenu h4 {
+  font-weight: 600;
+  margin: 0; 
+  padding: 10px; 
+  font-size: 1rem; 
+}
+
+.btn {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.demo {
+  width: 6rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  border: 3px solid black;
+  background-color: white;
+  font-weight: 600;
+  z-index: 99;
+}
+
+.dashboard {
+  width: 6rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  border: 3px solid black;
+  background-color: rgb(74, 250, 124);
+  font-weight: 600;
+}
+.dropdownMenu h4 {
+  padding: 10px 0; 
+  font-size: 1rem; 
+  border-bottom: 1px solid #ddd;
+}
+.dropdownMenu h4:hover {
+  color: rgb(74, 250, 124);
+  border-bottom: rgb(9, 108, 37);
+}
+
+.dropdownMenu h4:last-child {
+  border-bottom: none; 
+}
+
+/********************************************************************************/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.navbarLogo {
+  display: flex;
+}
+
+.navbarLogo h1 {
+  font-size: 2.2rem;
+}
+
+.navbarNav {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  font-weight: 600;
+  gap: 1.2rem;
+}
+
+.navItem {
+ 
+  position: relative; /* Allows absolute positioning for dropdown */
+}
+
+.navItem a{
+  font-weight: 600;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(6, 3, 3);
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem; /* Icon size */
+  cursor: pointer; /* Indicates clickability */
+}
+
+/* Mobile responsive styles with media queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 1rem; /* Adjust padding for smaller screens */
+    padding-right: 1rem;
+  }
+
+  .navbarNav {
+    display: none; /* Hide the default nav */
+  }
+
+  .hamburger {
+    display: flex; /* Display the hamburger icon */
+    justify-content: flex-end; /* Align to the right */
+  }
+
+  .showMenu {
+    display: block; /* Display nav items on mobile when menu is open */
+    flex-direction: row; /* Stack nav items vertically */
+    align-items: flex-start; /* Align to the left */
+    padding: 10px; /* Padding for space between items */
+  }
+
+  .btn {
+    display: none; /* Hide default buttons on mobile */
+  }
+}
+
+/***********************************************************************************/

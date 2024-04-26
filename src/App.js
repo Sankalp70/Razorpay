@@ -11,6 +11,7 @@ import Grid from "./components/MobileComponent/Grid/Grid";
 import Component from './components/MobileComponent/Component/Component'
 import useWindowSize from "./components/Hooks/useWindowSize";
 import Scroller from "./components/Scroller/Scroller";
+import Watinav from "./components/Watinav/Navbar";
 
 
 const App = () => {
@@ -20,14 +21,14 @@ const App = () => {
 
   return (
     <div>      
-            {isDesktop ? <Navbar /> : <Nav />} 
+            {isDesktop ? <Watinav/> : <Nav />} 
             {isDesktop ? <Main /> : <Signup />}
             {isDesktop ? <Carousel /> : <Grid />}
             {isDesktop ? <Features /> : <Component />}
             {isDesktop ? <Section /> : null } 
             {isDesktop ? <Scroller /> : null } 
             <Footer/> 
-             
+          
     </div>
   );
 };
