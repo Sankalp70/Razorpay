@@ -95,7 +95,7 @@ const Carousel = () => {
       setActiveCard((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
     }
   };
-
+                        /*Code Updated*/ 
   return (
     <div className={Carouselstyle.wrapper}>
       <div className={Carouselstyle.cards}>
